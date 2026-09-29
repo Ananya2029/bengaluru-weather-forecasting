@@ -1,0 +1,68 @@
+{
+  "temperature": {
+    "Persistence (today = tomorrow)": {
+      "MAE_C": 0.7,
+      "RMSE_C": 0.902,
+      "R2": 0.835,
+      "CV_MAE_C": null
+    },
+    "Climatology (avg for that date)": {
+      "MAE_C": 1.068,
+      "RMSE_C": 1.359,
+      "R2": 0.626,
+      "CV_MAE_C": null
+    },
+    "Ridge Regression": {
+      "MAE_C": 0.664,
+      "RMSE_C": 0.841,
+      "R2": 0.857,
+      "CV_MAE_C": 0.768
+    },
+    "Random Forest": {
+      "MAE_C": 0.663,
+      "RMSE_C": 0.829,
+      "R2": 0.861,
+      "CV_MAE_C": 0.798
+    },
+    "XGBoost": {
+      "MAE_C": 0.637,
+      "RMSE_C": 0.814,
+      "R2": 0.866,
+      "CV_MAE_C": 0.836
+    }
+  },
+  "temperature_selected": "Ridge Regression",
+  "rain": {
+    "Persistence (rain today -> rain tomorrow)": {
+      "ROC_AUC": null,
+      "Precision": 0.58,
+      "Recall": 0.58,
+      "F1": 0.58
+    },
+    "Logistic Regression": {
+      "ROC_AUC": 0.898,
+      "Precision": 0.568,
+      "Recall": 0.821,
+      "F1": 0.672,
+      "CV_ROC_AUC": 0.912
+    },
+    "Random Forest": {
+      "ROC_AUC": 0.897,
+      "Precision": 0.594,
+      "Recall": 0.875,
+      "F1": 0.708,
+      "CV_ROC_AUC": 0.914
+    },
+    "XGBoost": {
+      "ROC_AUC": 0.903,
+      "Precision": 0.602,
+      "Recall": 0.893,
+      "F1": 0.719,
+      "CV_ROC_AUC": 0.904
+    }
+  },
+  "rain_selected": "Random Forest",
+  "test_start": "2025-04-01",
+  "n_train": 1157,
+  "n_test": 376
+}
